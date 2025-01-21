@@ -30,6 +30,7 @@ export default defineConfig({
         "@/shortcodes/Button",
         "@/components/Calendar.astro",
         "@/components/LostItems.astro",
+        "@/components/LostItemForm.astro",
         "@/shortcodes/Notice",
         "@/shortcodes/Video",
         "@/shortcodes/Youtube",

@@ -18,7 +18,7 @@ export const onRequestPost: PagesFunction<Env> = async (context) => {
       await context.env.LOST_AND_FOUND_ITEMS.put(uuid, "image", {customMetadata:formDataObj})
 
       console.log(uuid);
-      return new Response("Thanks");
+      return new Response("Thank you for submitting this lost item");
     } catch (err) {
       console.error(`Error parsing JSON content: ${err}`);
       return new Response("Error parsing JSON content", { status: 400 });

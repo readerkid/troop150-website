@@ -15,7 +15,7 @@ const LostItems = () => {
           .then(data => setItems(data)
         )
       });
-  });
+  }, []);
 
   return <ul>
     {items.map(item => <li>
